@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+form {
+  margin-top: 16px;
+  max-width: 500px;
+}
+
+td {
+  padding: 8px;
+  border-bottom: 1px solid #DEE2E6 !important;
+}
+
+th {
+  background-color: #DEE2E6;
+  padding: 8px;
+}
+
+.btn-custom {
+  background-color: #008000 !important;
+  color: #FFFFFF !important;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.btn-custom:hover {
+  background-color: #006600 !important;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.remove-td {
+  cursor: pointer;
+  width: 30px;
+}
+
+.title {
+  font-weight: 400 !important;
+}

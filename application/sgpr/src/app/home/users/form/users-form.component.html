@@ -1,0 +1,69 @@
+<h3>{{ 'users.form.title' | translate }}</h3>
+
+<form>
+  <div class="form-group">
+    <label for="name">
+      {{ 'users.form.identifier.name.label' | translate }}
+    </label>
+
+    <input 
+      type="text" 
+      id="name"
+      class="form-control"
+      placeholder="{{ 'users.form.identifier.name.label.placeholder' | translate }}">
+  </div>
+
+  <div class="form-group">
+    <label for="username">
+      {{ 'users.form.identifier.username.label' | translate }}
+    </label>
+
+    <input 
+      type="text" 
+      id="username"
+      class="form-control"
+      placeholder="{{ 'users.form.identifier.username.placeholder' | translate }}">
+  </div>
+
+  <div class="form-group">
+    <label for="email">
+      {{ 'users.form.identifier.email.label' | translate }}
+    </label>
+
+    <input 
+      type="text" 
+      id="email"
+      class="form-control"
+      placeholder="{{ 'users.form.identifier.email.placeholder' | translate }}">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">
+      {{ 'users.form.identifier.phone.label' | translate }}
+    </label>
+
+    <input 
+      type="text" 
+      id="phone"
+      class="form-control"
+      placeholder="{{ 'users.form.identifier.phone.placeholder' | translate }}">
+  </div>
+
+  <div class="form-group">
+    <label for="type">
+      {{ 'users.form.identifier.type.label' | translate }}
+    </label>
+
+    <ng-multiselect-dropdown
+      [placeholder]="placeholder"
+      [settings]="dropdownSettings"
+      [data]="userTypeList">
+    </ng-multiselect-dropdown>
+  </div>
+
+  <button 
+    type="submit"
+    class="btn btn-custom">
+    {{ 'users.form.submit.button' | translate }}
+  </button>
+</form>

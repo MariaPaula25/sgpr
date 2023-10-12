@@ -1,0 +1,34 @@
+
+.form-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.error-message {
+  color: #ff0000;
+}
+
+.signin-box {
+  width: 500px;
+  height: auto;
+  background-color: #E9E9E9;
+  border-radius: 10px;
+  padding: 20px;
+
+  form {
+    
+    div {
+
+      button {
+        color: white;
+        background-color: #008000;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  h2 {
+    text-align: center;
+    color: #008000;
+  }
+}

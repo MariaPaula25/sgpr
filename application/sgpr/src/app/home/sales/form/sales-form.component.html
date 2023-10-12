@@ -1,0 +1,39 @@
+<h3>{{ 'sales.form.title' | translate }}</h3>
+
+<form>
+  <div class="form-group">
+    <label for="identifier">
+      {{ 'sales.form.identifier.label' | translate }}
+    </label>
+
+    <input 
+      type="text" 
+      id="identifier"
+      class="form-control"
+      placeholder="{{ 'sales.form.identifier.label.placeholder' | translate }}">
+  </div>
+
+  <div class="form-group">
+    <label for="identifier">
+      {{ 'sales.form.date.label' | translate }}
+    </label>
+
+    <input 
+      type="text" 
+      id="identifier"
+      class="form-control"
+      placeholder="{{ 'sales.form.date.label.placeholder' | translate }}">
+  </div>
+
+  <button 
+    type="button"
+    class="d-block btn btn-custom">
+    {{ 'sales.form.add.button' | translate }}
+  </button>
+
+  <button 
+    type="submit"
+    class="btn btn-custom">
+    {{ 'sales.form.submit.button' | translate }}
+  </button>
+</form>

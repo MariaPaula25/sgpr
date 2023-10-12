@@ -1,0 +1,19 @@
+<h3 class="title">{{ 'logs.list.title' | translate }}</h3>
+
+<p-table [value]="logsList">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>{{ 'logs.list.date_column' | translate }}</th>
+        <th>{{ 'logs.list.username_column' | translate }}</th>
+        <th>{{ 'logs.list.action_column' | translate }}</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-input>
+      <tr>
+        <td>{{ input.date }}</td>
+        <td>{{ input.username }}</td>
+        <td>{{ input.action }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  

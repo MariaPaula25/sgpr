@@ -1,0 +1,47 @@
+<div class="container-fluid h-100">
+  <div class="row flex-nowrap h-100">
+    <div class="col-auto h-100 menu-container">
+      <h2>SGPR</h2>
+      
+      <h5>{{ 'menu.administrative' | translate }}</h5>
+      <ul class="nav nav-pills flex-column">
+        <li 
+          *ngFor="let item of administrativeItems" 
+          [class.active]="selectedMenuOption === item.id" 
+          (click)="selectOption(item)">
+          <a class="nav-link align-middle px-0">
+            {{ item.label | translate }}
+          </a>
+        </li>
+      </ul>
+
+      <h5>{{ 'menu.control' | translate }}</h5>
+      <ul class="nav nav-pills flex-column">
+        <li 
+          *ngFor="let item of controlNavItems"
+          [class.active]="selectedMenuOption === item.id"
+          [class.hidden]="item.id === 'users' && hasToShowUsersOption === false" 
+          (click)="selectOption(item)">
+          <a
+            class="nav-link align-middle px-0">
+            {{ item.label | translate }}
+          </a>
+        </li>
+      </ul>
+      <div class="bottom-container">
+        <span 
+          class="d-block">
+          {{ 'menu.edit_password' | translate }}
+        </span>
+        <span 
+          class="d-block" 
+          (click)="logout()">
+          {{ 'menu.logout' | translate }}
+        </span>
+      </div>
+    </div>  
+      <div class="col py-3 content-container">
+        <router-outlet></router-outlet>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<h3>{{ 'cattle_paddocks.form.title' | translate }}</h3>
+
+<form>
+  <div class="form-group">
+    <label for="identifier">
+      {{ 'cattle_paddocks.form.identifier.label' | translate }}
+    </label>
+
+    <input 
+      type="text" 
+      id="identifier"
+      class="form-control"
+      placeholder="{{ 'cattle_paddocks.form.identifier.label.placeholder' | translate }}">
+  </div>
+
+  <div class="form-group">
+    <label for="description">
+      {{ 'cattle_paddocks.form.description.label' | translate }}
+    </label>
+
+    <textarea
+      type="text" 
+      id="description"
+      class="form-control"
+      placeholder="{{ 'cattle_paddocks.form.description.label.placeholder' | translate }}">
+    </textarea>
+  </div>
+
+  <div>
+    <label for="animals">
+      {{ 'cattle_paddocks.form.animals.label' | translate }}
+    </label>
+
+    <ng-multiselect-dropdown
+      [placeholder]="placeholder"
+      [settings]="dropdownSettings"
+      [data]="animalsList">
+    </ng-multiselect-dropdown>
+  </div>
+
+  <button 
+    type="submit"
+    class="btn btn-custom">
+    {{ 'cattle_paddocks.form.submit.button' | translate }}
+  </button>
+</form>

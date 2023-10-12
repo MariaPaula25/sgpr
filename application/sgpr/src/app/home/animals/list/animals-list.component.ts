@@ -1,42 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 import { TranslateService } from '@ngx-translate/core';
 
 import { Animal, Sex } from '../animals.model';
+import { AnimalsService } from '../animals.service';
 
 @Component({
   selector: 'animals-list',
   templateUrl: './animals-list.component.html',
   providers: [MessageService]
 })
-export class AnimalsListComponent {
+export class AnimalsListComponent implements OnInit {
 
   hasToShowDeleteDialog = false;
 
-  animalsList: Animal[] = [
-   {
-      identifierNumber: 't', 
-      sex: Sex.FEMALE, 
-      weight: 11
-    },
-    {
-      identifierNumber: 't',
-      sex: Sex.FEMALE,
-      weight: 11
-    },
-    {
-      identifierNumber: 't',
-      sex: Sex.FEMALE,
-      weight: 11
-    }
-  ]
+  animalsList!: Animal[];
 
   constructor(
+    private animalsService: AnimalsService,
     private messageService: MessageService,
     private router: Router,
     private translateService: TranslateService
    ) { }
+
+  ngOnInit() {
+    this.animalsService.getAll()
+    .subscribe((result: Animal[]) => {
+      this.animalsList = result;
+    }); 
+  }
 
   redirectToForm() {
     this.router.navigate(['home/animals/form']);

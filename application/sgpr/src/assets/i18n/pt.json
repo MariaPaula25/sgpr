@@ -18,6 +18,8 @@
   "menu.edit_password": "Alterar senha",
   "menu.logout": "Sair >",
 
+  "edit": "Editar",
+
   "animals.list.title": "Animais",
   "animals.list.add_new": "Adicionar novo",
   "animals.list.identifier_column": "Identificação",

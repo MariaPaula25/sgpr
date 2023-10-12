@@ -8,6 +8,7 @@ import { ToastModule } from 'primeng/toast';
 
 import { AnimalsFormComponent } from './form/animals-form.component';
 import { AnimalsListComponent } from './list/animals-list.component';
+import { AnimalsService } from './animals.service';
 
 @NgModule({
   imports: [
@@ -21,6 +22,9 @@ import { AnimalsListComponent } from './list/animals-list.component';
   declarations: [
     AnimalsListComponent,
     AnimalsFormComponent
+  ],
+  providers: [
+    AnimalsService
   ],
   exports: [
     AnimalsListComponent,

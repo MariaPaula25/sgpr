@@ -22,6 +22,7 @@ import { SalesModule } from './sales/sales.module';
 import { VaccinateModule } from './vaccinate/vaccinate.module';
 import { SalesListComponent } from './sales/list/sales-list.component';
 import { SalesFormComponent } from './sales/form/sales-form.component';
+import { animalResolver } from './animals/animal.resolver';
 
 const routes: Routes = [
   { 
@@ -35,6 +36,9 @@ const routes: Routes = [
       { 
         path: 'animals/form', 
         component: AnimalsFormComponent,
+        resolve: {
+          animal: animalResolver
+        }
       },
       { 
         path: 'cattle-paddocks', 

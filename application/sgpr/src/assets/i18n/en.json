@@ -3,6 +3,7 @@
   "signin.username.label.placeholder": "Enter your username",
   "signin.password.label": "Password:",
   "signin.password.label.placeholder": "Enter your password",
+  "signin.forgot_password.label": "Forgot your password?",
   "signin.signin.button": "Signin",
   "signin.signin.error_message": "Invalid Credentials.",
 

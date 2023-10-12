@@ -3,6 +3,7 @@
   "signin.username.label.placeholder": "Digite seu usuário",
   "signin.password.label": "Senha:",
   "signin.password.label.placeholder": "Digite sua senha",
+  "signin.forgot_password.label": "Esqueceu sua senha?",
   "signin.signin.button": "Entrar",
   "signin.signin.error_message": "Credenciais inválidas.",
 

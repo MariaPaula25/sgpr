@@ -33,6 +33,10 @@
           placeholder="{{ 'signin.password.label.placeholder' | translate }}"
           [(ngModel)]="credentials.password"
           (focus)="clearErroMessage()">
+
+        <div class="d-flex justify-content-end">
+          <a class="link-opacity-100">{{ 'signin.forgot_password.label' | translate }}</a>
+        </div>
       </div>
     
       <div class="d-flex justify-content-center">

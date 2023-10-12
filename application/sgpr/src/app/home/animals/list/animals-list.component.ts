@@ -30,10 +30,7 @@ export class AnimalsListComponent implements OnInit, OnDestroy {
    ) { }
 
   ngOnInit() {
-    this.getListSubscription = this.animalsService.getAll()
-    .subscribe((result: Animal[]) => {
-      this.animalsList = result;
-    }); 
+    this.getList();
   }
 
   ngOnDestroy() {
@@ -66,7 +63,17 @@ export class AnimalsListComponent implements OnInit, OnDestroy {
           summary: this.translateService.instant('animals.list.toast.success'), 
           detail: this.translateService.instant('animals.list.toast.success_content')
         });
+
+        this.getList();
+        
       });
+  }
+
+  getList() {
+    this.getListSubscription = this.animalsService.getAll()
+    .subscribe((result: Animal[]) => {
+      this.animalsList = result;
+    }); 
   }
 
 }

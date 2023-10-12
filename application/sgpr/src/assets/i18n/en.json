@@ -29,6 +29,9 @@
   "animals.list.remove_dialog.content": "Are you sure you want to remove this animal?",
   "animals.list.remove_dialog.remove_button": "Remove",
 
+  "animals.list.toast.success": "Success",
+  "animals.list.toast.success_content": "The animal was removed successfully!",
+
   "female": "Female",
   "male": "Male",
 

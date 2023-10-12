@@ -4,6 +4,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
 import { DialogModule } from 'primeng/dialog';
 import { TableModule } from 'primeng/table';
+import { ToastModule } from 'primeng/toast';
 
 import { AnimalsFormComponent } from './form/animals-form.component';
 import { AnimalsListComponent } from './list/animals-list.component';
@@ -14,6 +15,7 @@ import { AnimalsListComponent } from './list/animals-list.component';
     CommonModule,
     DialogModule,
     TableModule,
+    ToastModule,
     TranslateModule
   ],
   declarations: [

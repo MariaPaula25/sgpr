@@ -9,12 +9,14 @@ import { ToastModule } from 'primeng/toast';
 import { AnimalsFormComponent } from './form/animals-form.component';
 import { AnimalsListComponent } from './list/animals-list.component';
 import { AnimalsService } from './animals.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     BrowserAnimationsModule,
     CommonModule,
     DialogModule,
+    FormsModule,
     TableModule,
     ToastModule,
     TranslateModule

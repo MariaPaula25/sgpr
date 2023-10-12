@@ -8,4 +8,5 @@ export interface Animal {
   identifierNumber: string;
   sex: Sex;
   weight?: string;
+  description?: string;
 };

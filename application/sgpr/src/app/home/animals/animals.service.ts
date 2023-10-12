@@ -21,12 +21,16 @@ export class AnimalsService {
     return this.httpClient.get<Animal>(`${this.url}/get/${animalId}`);
   }
 
+  save(animal: Animal): Observable<any> {
+    return this.httpClient.post(`${this.url}/create`, animal);
+  }
+
   update(animal: Animal): Observable<any> {
     return this.httpClient.put(`${this.url}/update`, animal);
   }
 
-  delete(animalId: string): Observable<any> {
-    return this.httpClient.delete(`${this.url}/delete${animalId}`);
+  delete(animalId: any): Observable<any> {
+    return this.httpClient.delete(`${this.url}/delete/${animalId}`);
   }
 
 }

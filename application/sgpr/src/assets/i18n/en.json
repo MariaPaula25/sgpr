@@ -25,6 +25,10 @@
   "animals.list.weight_column": "Weight",
   "animals.list.remove_animal": "Remove animal",
 
+  "animals.list.remove_dialog.header": "Remove animal",
+  "animals.list.remove_dialog.content": "Are you sure you want to remove this animal?",
+  "animals.list.remove_dialog.remove_button": "Remove",
+
   "female": "Female",
   "male": "Male",
 

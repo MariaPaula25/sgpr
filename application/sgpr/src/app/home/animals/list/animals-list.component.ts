@@ -9,6 +9,8 @@ import { Animal, Sex } from '../animals.model';
 })
 export class AnimalsListComponent {
 
+  hasToShowDeleteDialog = false;
+
   animalsList: Animal[] = [
    {
       identifierNumber: 't', 
@@ -33,6 +35,15 @@ export class AnimalsListComponent {
 
   redirectToForm() {
     this.router.navigate(['home/animals/form']);
+  }
+
+  showDialog () {
+    this.hasToShowDeleteDialog = true;
+  }
+
+  removeAnimal() {
+    this.hasToShowDeleteDialog = false;
+
   }
 
 }

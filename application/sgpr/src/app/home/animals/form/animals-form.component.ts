@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'animals-form',
@@ -7,5 +8,13 @@ import { Component } from '@angular/core';
 export class AnimalsFormComponent {
 
   isEditing = false;
+
+  constructor(
+    private router: Router
+  ) { }
+
+  save() {
+    this.router.navigate(['home/animals']);
+  }
   
 }

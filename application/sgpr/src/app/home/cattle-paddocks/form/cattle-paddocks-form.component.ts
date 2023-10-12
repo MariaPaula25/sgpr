@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
 
@@ -21,6 +22,7 @@ export class CattlePaddocksFormComponent implements OnInit {
   dropdownSettings!: IDropdownSettings;
 
   constructor(
+    private router: Router,
     private translateService: TranslateService
   ) { }
 
@@ -39,6 +41,10 @@ export class CattlePaddocksFormComponent implements OnInit {
     };
 
     this.placeholder = this.translateService.instant('cattle_paddocks.form.animals.label.placeholer');
-  } 
+  }
+
+  save() {
+    this.router.navigate(['home/cattle-paddocks']);
+  }
 
 }

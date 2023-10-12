@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { IDropdownSettings } from 'ng-multiselect-dropdown';
 
@@ -23,11 +24,16 @@ export class UsersFormComponent implements OnInit {
   };
 
   constructor(
+    private router: Router,
     private translateService: TranslateService
   ) { }
 
   ngOnInit() {
     this.placeholder = this.translateService.instant('users.form.identifier.type.label.placeholder');
+  }
+
+  save() {
+    this.router.navigate(['home/users']);
   }
 
 }

@@ -41,6 +41,13 @@ const routes: Routes = [
         }
       },
       { 
+        path: 'animals/form/:id', 
+        component: AnimalsFormComponent,
+        resolve: {
+          animal: animalResolver
+        }
+      },
+      { 
         path: 'cattle-paddocks', 
         component: CattlePaddocksListComponent 
       },

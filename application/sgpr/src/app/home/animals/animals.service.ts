@@ -26,7 +26,7 @@ export class AnimalsService {
   }
 
   update(animal: Animal): Observable<any> {
-    return this.httpClient.put(`${this.url}/update`, animal);
+    return this.httpClient.put(`${this.url}/edit`, animal);
   }
 
   delete(animalId: any): Observable<any> {

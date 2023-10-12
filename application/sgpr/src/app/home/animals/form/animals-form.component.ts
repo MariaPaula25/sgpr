@@ -19,7 +19,6 @@ export class AnimalsFormComponent implements OnInit {
 
   ngOnInit() {
     this.animal = this.activatedRoute.snapshot?.data?.['animal'];
-    console.log(this.animal);
   }
 
   save() {

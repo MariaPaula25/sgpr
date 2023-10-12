@@ -50,13 +50,17 @@ export class AnimalsListComponent implements OnInit, OnDestroy {
     this.hasToShowDeleteDialog = true;
   }
 
+  editAnimal(animal: Animal) {
+    this.router.navigate([`home/animals/form/${animal.id}`]);
+  }
+
   removeAnimal() {
     this.hasToShowDeleteDialog = false;
 
     this.deleteSubscription = this.animalsService.delete(this.selectedAnimal?.id).subscribe(
       () => {
         this.selectedAnimal = undefined;
-        
+
         this.messageService.add({ 
           severity: 'success', 
           summary: this.translateService.instant('animals.list.toast.success'), 

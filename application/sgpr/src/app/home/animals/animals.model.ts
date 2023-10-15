@@ -4,7 +4,7 @@ export enum Sex {
 };
 
 export interface Animal {
-  id?: string;
+  rowid?: string;
   identifierNumber: string;
   sex: Sex;
   weight?: string;

@@ -4,7 +4,7 @@ import { MessageService } from 'primeng/api';
 import { TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
 
-import { Animal, Sex } from '../animals.model';
+import { Animal } from '../animals.model';
 import { AnimalsService } from '../animals.service';
 
 @Component({
@@ -48,13 +48,13 @@ export class AnimalsListComponent implements OnInit, OnDestroy {
   }
 
   editAnimal(animal: Animal) {
-    this.router.navigate([`home/animals/form/${animal.id}`]);
+    this.router.navigate([`home/animals/form/${animal.rowid}`]);
   }
 
   removeAnimal() {
     this.hasToShowDeleteDialog = false;
 
-    this.deleteSubscription = this.animalsService.delete(this.selectedAnimal?.id).subscribe(
+    this.deleteSubscription = this.animalsService.delete(this.selectedAnimal?.rowid).subscribe(
       () => {
         this.selectedAnimal = undefined;
 

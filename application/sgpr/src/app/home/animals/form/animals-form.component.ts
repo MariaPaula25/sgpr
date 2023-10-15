@@ -22,7 +22,7 @@ export class AnimalsFormComponent implements OnInit {
   }
 
   save() {
-    if (this.animal.id) {
+    if (this.animal.rowid) {
       this.animalsService.update(this.animal).subscribe(
         () => this.handleResponse(),
         () => this.handleResponse()

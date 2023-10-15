@@ -5,7 +5,7 @@ export enum VaccinateStatus {
 }
 
 export interface Vaccinate {
-  id?: string;
+  rowid?: string;
   name: string;
   description: string;
   dosage: string;

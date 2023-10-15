@@ -1,5 +1,5 @@
 export interface Input {
-  id?: string;
+  rowid?: string;
   name: string;
   date: string;
   qtd: number;

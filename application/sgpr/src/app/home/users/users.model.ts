@@ -5,7 +5,7 @@ export enum UserType {
 };
 
 export interface User {
-  id?: string;
+  rowid?: string;
   username: string;
   name: string;
   email: string;

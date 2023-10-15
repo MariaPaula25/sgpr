@@ -11,19 +11,19 @@ export class CattlePaddocksListComponent {
 
 cattlePaddocksList: CattlePaddock[] = [
   { 
-    id: '1', 
+    rowid: '1', 
     name: 'Piquete 1', 
     description: '10 Hectares', 
     animalsQtd: 16 
   },
   { 
-    id: '2', 
+    rowid: '2', 
     name: 'Piquete 2',
     description: '7 Hectares', 
     animalsQtd: 12 
   },
   { 
-    id: '3',
+    rowid: '3',
     name: 'Piquete 3', 
     description: '12 Hectares', 
     animalsQtd: 20 

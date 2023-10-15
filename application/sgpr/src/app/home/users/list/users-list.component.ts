@@ -10,7 +10,7 @@ export class UsersListComponent {
 
   usersList: User[] = [
     {
-      id: '1',
+      rowid: '1',
       username: 'maria',
       name: 'Maria Paula de Oliveira',
       email: 'maria@test',
@@ -18,7 +18,7 @@ export class UsersListComponent {
       type: UserType.CONTROLLER
     },
     {
-      id: '2',
+      rowid: '2',
       username: 'sonia',
       name: 'Sonia Maria de Oliveira',
       email: 'sonia@test',
@@ -26,7 +26,7 @@ export class UsersListComponent {
       type: UserType.CONTROLLER
     },
     {
-      id: '3',
+      rowid: '3',
       username: 'gabriel',
       name: 'Gabriel da Costa Morais',
       email: 'gabriel@test',

@@ -11,19 +11,19 @@ export class InputsListComponent {
 
   inputsList: Input[] = [
     {
-      id: '1',
+      rowid: '1',
       name: 'Ripercol', 
       date: '01/08/2025', 
       qtd: 5 
     },
     {
-      id: '2',
+      rowid: '2',
       name: 'Ivomec', 
       date: '01/09/2026', 
       qtd: 6 
     },
     {
-      id: '3',
+      rowid: '3',
       name: 'Ectonil', 
       date: '01/10/2027', 
       qtd: 7 

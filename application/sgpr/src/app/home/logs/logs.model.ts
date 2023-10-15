@@ -21,7 +21,7 @@ export enum LogAction {
 };
 
 export interface Log {
-  id?: string;
+  rowid?: string;
   username: string; 
   date: string; 
   action: LogAction;

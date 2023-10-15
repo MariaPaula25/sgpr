@@ -1,5 +1,5 @@
 export interface CattlePaddock {
-  id?: string;
+  rowid?: string;
   name: string;
   description: string;
   animalsQtd: number;

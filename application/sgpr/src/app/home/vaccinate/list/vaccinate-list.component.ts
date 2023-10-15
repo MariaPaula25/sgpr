@@ -11,7 +11,7 @@ export class VaccinateListComponent {
 
   vaccinateList: Vaccinate[] = [
     {
-      id: '1',
+      rowid: '1',
       name: 'Brucelose - B19', 
       description: 'fêmeas bovinas entre 3 e 8 meses', 
       dosage: '2ml', 
@@ -19,7 +19,7 @@ export class VaccinateListComponent {
       status: VaccinateStatus.DONE 
     },
     {
-      id: '2',
+      rowid: '2',
       name: 'aftosa', 
       description: 'todo rebanho', 
       dosage: '2ml', 

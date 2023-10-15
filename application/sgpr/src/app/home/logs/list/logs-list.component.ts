@@ -10,19 +10,19 @@ export class LogsListComponent {
 
   logsList: Log[] = [
     { 
-      id: '1',
+      rowid: '1',
       username: 'admin', 
       date: '10/08/2023', 
       action: LogAction.CREATE_USER 
     },
     { 
-      id: '2', 
+      rowid: '2', 
       username: 'controller', 
       date: '12/08/2023', 
       action: LogAction.CREATE_ANIMAL 
     },
     { 
-      id: '3', 
+      rowid: '3', 
       username: 'controller', 
       date: '14/08/2023', 
       action: LogAction.CREATE_CATTLE_PADDOCKS 

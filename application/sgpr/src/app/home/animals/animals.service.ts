@@ -7,7 +7,7 @@ import { Animal } from "./animals.model";
 @Injectable()
 export class AnimalsService {
 
-  url = 'http://localhost:443/animals'
+  url = 'http://ec2-34-217-211-100.us-west-2.compute.amazonaws.com:443/animals'
 
   constructor(
     private httpClient: HttpClient
